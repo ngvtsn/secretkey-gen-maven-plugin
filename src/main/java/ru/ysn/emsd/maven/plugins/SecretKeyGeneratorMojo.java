@@ -43,7 +43,6 @@ public class SecretKeyGeneratorMojo extends AbstractMojo {
         } catch (NoSuchAlgorithmException e) {
             throw new MojoExecutionException(e.getMessage());
         }
-        getLog().debug(propName + "");
         String encodedKey = Base64.getEncoder().encodeToString(secretKey.getEncoded());
         getLog().debug("Secret key property -> " + propName + " " + encodedKey);
         project.getProperties().setProperty(propName, encodedKey);

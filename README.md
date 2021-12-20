@@ -35,4 +35,4 @@ Maven plugin for generate a secret key
     @secretkey@ for Spring properties
 ````
 
-secretkey is prop-name default value.
+secret key is prop-name default value.
